@@ -1,23 +1,14 @@
-var fs = require('fs');
-
-var protractorBase = __dirname + '/node_modules/protractor/';
-if(!fs.existsSync(protractorBase)) {
-    protractorBase = __dirname + '/node_modules/gulp-protractor/node_modules/protractor/';
-}
-
-var webdriverVersions = require(protractorBase + 'config.json').webdriverVersions;
-
 exports.config = {
-  multiCapabilities: [{
-      browserName: 'chrome',
-      chromeOptions: {
-          args: ['no-sandbox']
-      }
-  }],
+  capabilities: {
+    'browserName': 'chrome'
+  },
   baseUrl: 'http://localhost:8088/',
-  seleniumServerJar: protractorBase + 'selenium/selenium-server-standalone-' + webdriverVersions.selenium + '.jar',
-  framework: 'jasmine2',
+  seleniumAddress: 'http://localhost:4444/wd/hub',
+
+  framework: 'jasmine',
+
   jasmineNodeOpts: {
     defaultTimeoutInterval: 30000
   }
+
 };

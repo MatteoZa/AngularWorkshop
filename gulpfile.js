@@ -1,15 +1,16 @@
 var gulp = require('gulp');
 var connect = require('gulp-connect');
-var protractor = require('gulp-protractor');
+var protractor = require('gulp-protractor').protractor;
 var server = require('gulp-server-livereload');
-var sass = require('gulp-sass');
-var autoprefixer = require('gulp-autoprefixer');
-var sourcemaps = require('gulp-sourcemaps');
 var webpackDevMiddleware = require('webpack-dev-middleware');
 var webpackHotMiddleware = require('webpack-hot-middleware');
 var webpack = require('webpack');
-var path = require('path');
 var webpackConfig = require('./webpack.config');
+
+var sourceFiles = [
+    'index.html',
+    'src/**/*.*'
+];
 
 gulp.task('connect', function() {
     var compiler = webpack(webpackConfig);
@@ -30,53 +31,26 @@ gulp.task('connect', function() {
     });
 });
 
-gulp.task('compile-stylesheets', function() {
-    return gulp
-        .src('src/sass/**/*.scss')
-        .pipe(sourcemaps.init())
-        .pipe(sass({
-            outputStyle: 'expanded',
-            includePaths: [
-                path.resolve('src'),
-                path.resolve('node_modules/bootstrap-sass/assets/stylesheets')
-            ]
-        }))
-        .pipe(autoprefixer())
-        .pipe(sourcemaps.write('.'))
-        .pipe(gulp.dest('build/stylesheets'));
-});
+gulp.task('test' ,['testserver'], TestE2eTask);
+gulp.task('testserver',ServerTask);
 
-gulp.task('copy-static', function() {
-    return gulp
-        .src('src/images/**/*.*')
-        .pipe(gulp.dest('build/images'));
-});
-
-gulp.task('webdriver-update', function(done) {
-    var browsers = ['chrome'];
-
-    if(process.platform === 'win32') {
-        browsers.push('ie');
-    }
-
-    protractor.webdriver_update({browsers: browsers}, done);
-});
-
-gulp.task('webdriver-standalone', protractor.webdriver_standalone);
-
-gulp.task('test', ['webdriver-update'], TestE2eTask);
-
-gulp.task('testserver', ServerTask);
-
-function TestE2eTask() {
+function TestE2eTask(){
+    // var sources = [].concat(conf.protractor.files);
+    console.log('test e2e ');
     return gulp.src('./src/components/**/*.spec.js')
-        .pipe(protractor.protractor({
+        .pipe(protractor({
             configFile: 'protractor.conf.js'
+            // args:['debug']
         }))
         .on('error',function(err){
-            console.log('error message from test e2e', err);
+            console.log('error message from test e2e',err);
             throw err;
+        }).on('end',function(){
+            if(testWebServer){
+                testWebServer.emit('kill');
+            }
         });
+
 }
 
 var testWebServer;
@@ -84,4 +58,4 @@ function ServerTask(){
     testWebServer = gulp.src(__dirname).pipe(server());
 }
 
-gulp.task('default', ['compile-stylesheets', 'copy-static', 'connect']);
+gulp.task('default', ['connect']);

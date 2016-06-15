@@ -1,0 +1,372 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'C:\\Program Files\\nodejs\\node.exe',
+1 verbose cli   'C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js',
+1 verbose cli   'install',
+1 verbose cli   '-g',
+1 verbose cli   'strongloop' ]
+2 info using npm@2.15.5
+3 info using node@v4.4.5
+4 verbose install initial load of C:\Users\Matteo\AppData\Roaming\npm\package.json
+5 verbose readDependencies loading dependencies from C:\Users\Matteo\AppData\Roaming\npm\package.json
+6 silly cache add args [ 'strongloop', null ]
+7 verbose cache add spec strongloop
+8 silly cache add parsed spec Result {
+8 silly cache add   raw: 'strongloop',
+8 silly cache add   scope: null,
+8 silly cache add   name: 'strongloop',
+8 silly cache add   rawSpec: '',
+8 silly cache add   spec: 'latest',
+8 silly cache add   type: 'tag' }
+9 silly addNamed strongloop@latest
+10 verbose addNamed "latest" is being treated as a dist-tag for strongloop
+11 info addNameTag [ 'strongloop', 'latest' ]
+12 silly mapToRegistry name strongloop
+13 silly mapToRegistry using default registry
+14 silly mapToRegistry registry https://registry.npmjs.org/
+15 silly mapToRegistry data Result {
+15 silly mapToRegistry   raw: 'strongloop',
+15 silly mapToRegistry   scope: null,
+15 silly mapToRegistry   name: 'strongloop',
+15 silly mapToRegistry   rawSpec: '',
+15 silly mapToRegistry   spec: 'latest',
+15 silly mapToRegistry   type: 'tag' }
+16 silly mapToRegistry uri https://registry.npmjs.org/strongloop
+17 verbose addNameTag registry:https://registry.npmjs.org/strongloop not in flight; fetching
+18 verbose request uri https://registry.npmjs.org/strongloop
+19 verbose request no auth needed
+20 info attempt registry request try #1 at 12:29:14
+21 verbose request id 0ba37fd6b91eff05
+22 verbose etag "CKE4PXQNNBXHU9OAG4BG232NM"
+23 http request GET https://registry.npmjs.org/strongloop
+24 http 304 https://registry.npmjs.org/strongloop
+25 verbose headers { date: 'Tue, 14 Jun 2016 10:29:04 GMT',
+25 verbose headers   via: '1.1 varnish',
+25 verbose headers   'cache-control': 'max-age=300',
+25 verbose headers   etag: '"CKE4PXQNNBXHU9OAG4BG232NM"',
+25 verbose headers   age: '137',
+25 verbose headers   connection: 'keep-alive',
+25 verbose headers   'x-served-by': 'cache-fra1225-FRA',
+25 verbose headers   'x-cache': 'HIT',
+25 verbose headers   'x-cache-hits': '1',
+25 verbose headers   'x-timer': 'S1465900144.534248,VS0,VE0',
+25 verbose headers   vary: 'Accept-Encoding' }
+26 silly get cb [ 304,
+26 silly get   { date: 'Tue, 14 Jun 2016 10:29:04 GMT',
+26 silly get     via: '1.1 varnish',
+26 silly get     'cache-control': 'max-age=300',
+26 silly get     etag: '"CKE4PXQNNBXHU9OAG4BG232NM"',
+26 silly get     age: '137',
+26 silly get     connection: 'keep-alive',
+26 silly get     'x-served-by': 'cache-fra1225-FRA',
+26 silly get     'x-cache': 'HIT',
+26 silly get     'x-cache-hits': '1',
+26 silly get     'x-timer': 'S1465900144.534248,VS0,VE0',
+26 silly get     vary: 'Accept-Encoding' } ]
+27 verbose etag https://registry.npmjs.org/strongloop from cache
+28 verbose get saving strongloop to C:\Users\Matteo\AppData\Roaming\npm-cache\registry.npmjs.org\strongloop\.cache.json
+29 verbose correctMkdir C:\Users\Matteo\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+30 silly addNameTag next cb for strongloop with tag latest
+31 silly addNamed strongloop@6.0.1
+32 verbose addNamed "6.0.1" is a plain semver version for strongloop
+33 silly cache afterAdd strongloop@6.0.1
+34 verbose afterAdd C:\Users\Matteo\AppData\Roaming\npm-cache\strongloop\6.0.1\package\package.json not in flight; writing
+35 verbose correctMkdir C:\Users\Matteo\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+36 verbose afterAdd C:\Users\Matteo\AppData\Roaming\npm-cache\strongloop\6.0.1\package\package.json written
+37 silly install resolved [ { name: 'strongloop',
+37 silly install resolved     version: '6.0.1',
+37 silly install resolved     description: 'StrongLoop Command Line Tools',
+37 silly install resolved     homepage: 'http://www.strongloop.com',
+37 silly install resolved     keywords:
+37 silly install resolved      [ 'Backend',
+37 silly install resolved        'LoopBack',
+37 silly install resolved        'Mobile',
+37 silly install resolved        'Platform',
+37 silly install resolved        'StrongLoop',
+37 silly install resolved        'alerts',
+37 silly install resolved        'analytics',
+37 silly install resolved        'agent',
+37 silly install resolved        'apm',
+37 silly install resolved        'build',
+37 silly install resolved        'bundle',
+37 silly install resolved        'cluster',
+37 silly install resolved        'config',
+37 silly install resolved        'dependencies',
+37 silly install resolved        'deploy',
+37 silly install resolved        'devops',
+37 silly install resolved        'event loop',
+37 silly install resolved        'forever',
+37 silly install resolved        'git',
+37 silly install resolved        'heap',
+37 silly install resolved        'heroku',
+37 silly install resolved        'logging',
+37 silly install resolved        'mBaaS',
+37 silly install resolved        'manager',
+37 silly install resolved        'master',
+37 silly install resolved        'memory',
+37 silly install resolved        'metrics',
+37 silly install resolved        'monitoring',
+37 silly install resolved        'nodeops',
+37 silly install resolved        'npm',
+37 silly install resolved        'npmrc',
+37 silly install resolved        'openshift',
+37 silly install resolved        'ops',
+37 silly install resolved        'performance',
+37 silly install resolved        'pm',
+37 silly install resolved        'process',
+37 silly install resolved        'profiler',
+37 silly install resolved        'profiling',
+37 silly install resolved        'registry',
+37 silly install resolved        'response',
+37 silly install resolved        'runner',
+37 silly install resolved        'service',
+37 silly install resolved        'slc',
+37 silly install resolved        'slowest functions',
+37 silly install resolved        'streams',
+37 silly install resolved        'strong-agent',
+37 silly install resolved        'strong-cli',
+37 silly install resolved        'strong-cluster-control',
+37 silly install resolved        'strong-pm',
+37 silly install resolved        'strong-supervisor',
+37 silly install resolved        'strongloop',
+37 silly install resolved        'strongops',
+37 silly install resolved        'supervisor',
+37 silly install resolved        'switch',
+37 silly install resolved        'time',
+37 silly install resolved        'upstart' ],
+37 silly install resolved     repository:
+37 silly install resolved      { type: 'git',
+37 silly install resolved        url: 'git://github.com/strongloop/strongloop.git' },
+37 silly install resolved     author: { name: 'engineering@strongloop.com' },
+37 silly install resolved     license: 'Artistic-2.0',
+37 silly install resolved     bin:
+37 silly install resolved      { slc: './bin/slc.js',
+37 silly install resolved        'lb-ng': './node_modules/loopback-sdk-angular-cli/bin/lb-ng' },
+37 silly install resolved     scripts:
+37 silly install resolved      { pretest: 'eslint --ignore-path .gitignore . && jscs .',
+37 silly install resolved        test: 'tap --bail test/test-*.*' },
+37 silly install resolved     dependencies:
+37 silly install resolved      { async: '^0.9.0',
+37 silly install resolved        debug: '^2.1.0',
+37 silly install resolved        'generator-loopback': '1.x',
+37 silly install resolved        'loopback-sdk-angular-cli': '2.x',
+37 silly install resolved        'node-inspector': '~0.7.0',
+37 silly install resolved        'nodefly-register': '~0.3.2',
+37 silly install resolved        nopt: '~3.0.1',
+37 silly install resolved        optimist: '^0.6.1',
+37 silly install resolved        read: '~1.0.5',
+37 silly install resolved        'strong-agent': '^2.0.0',
+37 silly install resolved        'strong-arc': '^1.2.0',
+37 silly install resolved        'strong-build': '^2.0.0',
+37 silly install resolved        'strong-deploy': '^3.x',
+37 silly install resolved        'strong-mesh-models': '^8.0.0',
+37 silly install resolved        'strong-pm': '^5.0.0',
+37 silly install resolved        'strong-registry': '^1.0.0',
+37 silly install resolved        'strong-start': '^1.1.0',
+37 silly install resolved        'strong-supervisor': '^3.0.0',
+37 silly install resolved        which: '^1.1.1',
+37 silly install resolved        JSONStream: '^1.0.3',
+37 silly install resolved        bufferutil: '^1.2.1',
+37 silly install resolved        'core-util-is': '^1.0.1',
+37 silly install resolved        d3: '^3.5.6',
+37 silly install resolved        heapdump: '^0.3.7',
+37 silly install resolved        inherits: '^2.0.1',
+37 silly install resolved        less: '~1.4.0',
+37 silly install resolved        lodash: '^3.10.1',
+37 silly install resolved        loopback: '^2.17.0',
+37 silly install resolved        'loopback-datasource-juggler': '^2.41.0',
+37 silly install resolved        'mime-db': '^1.19.0',
+37 silly install resolved        'modern-syslog': '^1.1.2',
+37 silly install resolved        moment: '^2.10.0',
+37 silly install resolved        'readable-stream': '^2.0.3',
+37 silly install resolved        'spawn-sync': '^1.0.13',
+37 silly install resolved        sqlite3: '^3.1.0',
+37 silly install resolved        'strong-debugger': '^1.0.0',
+37 silly install resolved        'strong-remoting': '^2.0.0',
+37 silly install resolved        'strong-swagger-ui': '^21.0.1',
+37 silly install resolved        'swagger-ui': '^2.1.3',
+37 silly install resolved        'utf-8-validate': '^1.2.1',
+37 silly install resolved        wrappy: '1.0.1',
+37 silly install resolved        ws: '^0.8.0' },
+37 silly install resolved     devDependencies: { eslint: '^1.1.0', jscs: '^1.11.3', tap: '^1.3.1' },
+37 silly install resolved     optionalDependencies:
+37 silly install resolved      { JSONStream: '^1.0.3',
+37 silly install resolved        bufferutil: '^1.2.1',
+37 silly install resolved        'core-util-is': '^1.0.1',
+37 silly install resolved        d3: '^3.5.6',
+37 silly install resolved        heapdump: '^0.3.7',
+37 silly install resolved        inherits: '^2.0.1',
+37 silly install resolved        less: '~1.4.0',
+37 silly install resolved        lodash: '^3.10.1',
+37 silly install resolved        loopback: '^2.17.0',
+37 silly install resolved        'loopback-datasource-juggler': '^2.41.0',
+37 silly install resolved        'mime-db': '^1.19.0',
+37 silly install resolved        'modern-syslog': '^1.1.2',
+37 silly install resolved        moment: '^2.10.0',
+37 silly install resolved        'readable-stream': '^2.0.3',
+37 silly install resolved        'spawn-sync': '^1.0.13',
+37 silly install resolved        sqlite3: '^3.1.0',
+37 silly install resolved        'strong-debugger': '^1.0.0',
+37 silly install resolved        'strong-remoting': '^2.0.0',
+37 silly install resolved        'strong-swagger-ui': '^21.0.1',
+37 silly install resolved        'swagger-ui': '^2.1.3',
+37 silly install resolved        'utf-8-validate': '^1.2.1',
+37 silly install resolved        wrappy: '1.0.1',
+37 silly install resolved        ws: '^0.8.0' },
+37 silly install resolved     gitHead: 'b3a27bb8f230b6bb9f0e8899788c2c08e31480c6',
+37 silly install resolved     bugs: { url: 'https://github.com/strongloop/strongloop/issues' },
+37 silly install resolved     _id: 'strongloop@6.0.1',
+37 silly install resolved     _shasum: 'fb910b8b10674b15922dd89f9dd710d6a8644378',
+37 silly install resolved     _from: 'strongloop@latest',
+37 silly install resolved     _npmVersion: '3.8.8',
+37 silly install resolved     _nodeVersion: '4.4.3',
+37 silly install resolved     _npmUser: { name: 'rmg', email: 'r.m.graham@gmail.com' },
+37 silly install resolved     dist:
+37 silly install resolved      { shasum: 'fb910b8b10674b15922dd89f9dd710d6a8644378',
+37 silly install resolved        tarball: 'https://registry.npmjs.org/strongloop/-/strongloop-6.0.1.tgz' },
+37 silly install resolved     maintainers:
+37 silly install resolved      [ [Object],
+37 silly install resolved        [Object],
+37 silly install resolved        [Object],
+37 silly install resolved        [Object],
+37 silly install resolved        [Object],
+37 silly install resolved        [Object],
+37 silly install resolved        [Object],
+37 silly install resolved        [Object],
+37 silly install resolved        [Object] ],
+37 silly install resolved     _npmOperationalInternal:
+37 silly install resolved      { host: 'packages-12-west.internal.npmjs.com',
+37 silly install resolved        tmp: 'tmp/strongloop-6.0.1.tgz_1462810780598_0.23546793684363365' },
+37 silly install resolved     directories: {},
+37 silly install resolved     _resolved: 'https://registry.npmjs.org/strongloop/-/strongloop-6.0.1.tgz',
+37 silly install resolved     readme: 'ERROR: No README data found!' } ]
+38 info install strongloop@6.0.1 into C:\Users\Matteo\AppData\Roaming\npm
+39 info installOne strongloop@6.0.1
+40 verbose installOne of strongloop to C:\Users\Matteo\AppData\Roaming\npm not in flight; installing
+41 verbose correctMkdir C:\Users\Matteo\AppData\Roaming\npm-cache\_locks correctMkdir not in flight; initializing
+42 verbose lock using C:\Users\Matteo\AppData\Roaming\npm-cache\_locks\strongloop-c0c180e077632316.lock for C:\Users\Matteo\AppData\Roaming\npm\node_modules\strongloop
+43 silly install write writing strongloop 6.0.1 to C:\Users\Matteo\AppData\Roaming\npm\node_modules\strongloop
+44 verbose unbuild node_modules\strongloop
+45 info preuninstall strongloop@6.0.1
+46 info uninstall strongloop@6.0.1
+47 verbose unbuild rmStuff strongloop@6.0.1 from C:\Users\Matteo\AppData\Roaming\npm\node_modules
+48 silly gentlyRm C:\Users\Matteo\AppData\Roaming\npm\slc.cmd is being gently removed
+49 silly gentlyRm verifying C:\Users\Matteo\AppData\Roaming\npm is an npm working directory
+50 silly gentlyRm C:\Users\Matteo\AppData\Roaming\npm\lb-ng.cmd is being gently removed
+51 silly gentlyRm verifying C:\Users\Matteo\AppData\Roaming\npm is an npm working directory
+52 silly gentlyRm containing path C:\Users\Matteo\AppData\Roaming\npm is under npm's control, in C:\Users\Matteo\AppData\Roaming\npm
+53 silly gentlyRm deletion target C:\Users\Matteo\AppData\Roaming\npm\slc.cmd is under C:\Users\Matteo\AppData\Roaming\npm
+54 verbose gentlyRm vacuuming from C:\Users\Matteo\AppData\Roaming\npm\slc.cmd up to C:\Users\Matteo\AppData\Roaming\npm
+55 silly gentlyRm containing path C:\Users\Matteo\AppData\Roaming\npm is under npm's control, in C:\Users\Matteo\AppData\Roaming\npm
+56 silly gentlyRm deletion target C:\Users\Matteo\AppData\Roaming\npm\lb-ng.cmd is under C:\Users\Matteo\AppData\Roaming\npm
+57 verbose gentlyRm vacuuming from C:\Users\Matteo\AppData\Roaming\npm\lb-ng.cmd up to C:\Users\Matteo\AppData\Roaming\npm
+58 silly gentlyRm C:\Users\Matteo\AppData\Roaming\npm\slc is being gently removed
+59 silly gentlyRm verifying C:\Users\Matteo\AppData\Roaming\npm is an npm working directory
+60 silly gentlyRm containing path C:\Users\Matteo\AppData\Roaming\npm is under npm's control, in C:\Users\Matteo\AppData\Roaming\npm
+61 silly gentlyRm deletion target C:\Users\Matteo\AppData\Roaming\npm\slc is under C:\Users\Matteo\AppData\Roaming\npm
+62 verbose gentlyRm vacuuming from C:\Users\Matteo\AppData\Roaming\npm\slc up to C:\Users\Matteo\AppData\Roaming\npm
+63 silly gentlyRm C:\Users\Matteo\AppData\Roaming\npm\lb-ng is being gently removed
+64 silly gentlyRm verifying C:\Users\Matteo\AppData\Roaming\npm is an npm working directory
+65 silly gentlyRm containing path C:\Users\Matteo\AppData\Roaming\npm is under npm's control, in C:\Users\Matteo\AppData\Roaming\npm
+66 silly gentlyRm deletion target C:\Users\Matteo\AppData\Roaming\npm\lb-ng is under C:\Users\Matteo\AppData\Roaming\npm
+67 verbose gentlyRm vacuuming from C:\Users\Matteo\AppData\Roaming\npm\lb-ng up to C:\Users\Matteo\AppData\Roaming\npm
+68 info postuninstall strongloop@6.0.1
+69 silly gentlyRm C:\Users\Matteo\AppData\Roaming\npm\node_modules\strongloop is being purged from base C:\Users\Matteo\AppData\Roaming\npm
+70 verbose gentlyRm don't care about contents; nuking C:\Users\Matteo\AppData\Roaming\npm\node_modules\strongloop
+71 silly vacuum-fs purging C:\Users\Matteo\AppData\Roaming\npm\node_modules\strongloop
+72 silly vacuum-fs quitting because other entries in C:\Users\Matteo\AppData\Roaming\npm\node_modules
+73 verbose tar unpack C:\Users\Matteo\AppData\Roaming\npm-cache\strongloop\6.0.1\package.tgz
+74 verbose tar unpacking to C:\Users\Matteo\AppData\Roaming\npm\node_modules\strongloop
+75 silly gentlyRm C:\Users\Matteo\AppData\Roaming\npm\node_modules\strongloop is being purged
+76 verbose gentlyRm don't care about contents; nuking C:\Users\Matteo\AppData\Roaming\npm\node_modules\strongloop
+77 silly gunzTarPerm modes [ '777', '666' ]
+78 silly gunzTarPerm extractEntry package.json
+79 silly gunzTarPerm modified mode [ 'package.json', 420, 438 ]
+80 silly gunzTarPerm extractEntry .npmignore
+81 silly gunzTarPerm modified mode [ '.npmignore', 420, 438 ]
+82 silly gunzTarPerm extractEntry README.md
+83 silly gunzTarPerm modified mode [ 'README.md', 420, 438 ]
+84 silly gunzTarPerm extractEntry CHANGES.md
+85 silly gunzTarPerm modified mode [ 'CHANGES.md', 420, 438 ]
+86 silly gunzTarPerm extractEntry CONTRIBUTING.md
+87 silly gunzTarPerm modified mode [ 'CONTRIBUTING.md', 420, 438 ]
+88 silly gunzTarPerm extractEntry LICENSE.md
+89 silly gunzTarPerm modified mode [ 'LICENSE.md', 420, 438 ]
+90 silly gunzTarPerm extractEntry .jscsrc
+91 silly gunzTarPerm modified mode [ '.jscsrc', 420, 438 ]
+92 silly gunzTarPerm extractEntry bin/slc.js
+93 silly gunzTarPerm modified mode [ 'bin/slc.js', 493, 511 ]
+94 silly gunzTarPerm extractEntry check-prepublish
+95 silly gunzTarPerm modified mode [ 'check-prepublish', 493, 511 ]
+96 silly gunzTarPerm extractEntry lib/command.js
+97 silly gunzTarPerm modified mode [ 'lib/command.js', 420, 438 ]
+98 silly gunzTarPerm extractEntry lib/loader.js
+99 silly gunzTarPerm modified mode [ 'lib/loader.js', 420, 438 ]
+100 silly gunzTarPerm extractEntry lib/shim.js
+101 silly gunzTarPerm modified mode [ 'lib/shim.js', 420, 438 ]
+102 silly gunzTarPerm extractEntry lib/version.js
+103 silly gunzTarPerm modified mode [ 'lib/version.js', 420, 438 ]
+104 silly gunzTarPerm extractEntry lib/commands/arc.js
+105 silly gunzTarPerm modified mode [ 'lib/commands/arc.js', 420, 438 ]
+106 silly gunzTarPerm extractEntry lib/commands/deploy.js
+107 silly gunzTarPerm modified mode [ 'lib/commands/deploy.js', 420, 438 ]
+108 silly gunzTarPerm extractEntry lib/commands/env.js
+109 silly gunzTarPerm modified mode [ 'lib/commands/env.js', 420, 438 ]
+110 silly gunzTarPerm extractEntry lib/commands/loopback.js
+111 silly gunzTarPerm modified mode [ 'lib/commands/loopback.js', 420, 438 ]
+112 silly gunzTarPerm extractEntry lib/commands/debug.js
+113 silly gunzTarPerm modified mode [ 'lib/commands/debug.js', 420, 438 ]
+114 silly gunzTarPerm extractEntry lib/commands/pm.js
+115 silly gunzTarPerm modified mode [ 'lib/commands/pm.js', 420, 438 ]
+116 silly gunzTarPerm extractEntry lib/commands/pmctl.js
+117 silly gunzTarPerm modified mode [ 'lib/commands/pmctl.js', 420, 438 ]
+118 silly gunzTarPerm extractEntry lib/commands/registry.js
+119 silly gunzTarPerm modified mode [ 'lib/commands/registry.js', 420, 438 ]
+120 silly gunzTarPerm extractEntry lib/commands/run.js
+121 silly gunzTarPerm modified mode [ 'lib/commands/run.js', 420, 438 ]
+122 silly gunzTarPerm extractEntry lib/commands/runctl.js
+123 silly gunzTarPerm modified mode [ 'lib/commands/runctl.js', 420, 438 ]
+124 silly gunzTarPerm extractEntry lib/commands/ctl.js
+125 silly gunzTarPerm modified mode [ 'lib/commands/ctl.js', 420, 438 ]
+126 silly gunzTarPerm extractEntry lib/commands/start.js
+127 silly gunzTarPerm modified mode [ 'lib/commands/start.js', 420, 438 ]
+128 silly gunzTarPerm extractEntry lib/commands/build.js
+129 silly gunzTarPerm modified mode [ 'lib/commands/build.js', 420, 438 ]
+130 silly gunzTarPerm extractEntry lib/commands/update.js
+131 silly gunzTarPerm modified mode [ 'lib/commands/update.js', 420, 438 ]
+132 silly gunzTarPerm extractEntry lib/commands/pm-install.js
+133 silly gunzTarPerm modified mode [ 'lib/commands/pm-install.js', 420, 438 ]
+134 silly gunzTarPerm extractEntry man/env.txt
+135 silly gunzTarPerm modified mode [ 'man/env.txt', 420, 438 ]
+136 silly gunzTarPerm extractEntry man/slc.txt
+137 silly gunzTarPerm modified mode [ 'man/slc.txt', 420, 438 ]
+138 silly gunzTarPerm extractEntry man/update.txt
+139 silly gunzTarPerm modified mode [ 'man/update.txt', 420, 438 ]
+140 silly gunzTarPerm extractEntry .eslintrc
+141 silly gunzTarPerm modified mode [ '.eslintrc', 420, 438 ]
+142 error tar.unpack untar error C:\Users\Matteo\AppData\Roaming\npm-cache\strongloop\6.0.1\package.tgz
+143 verbose unlock done using C:\Users\Matteo\AppData\Roaming\npm-cache\_locks\strongloop-c0c180e077632316.lock for C:\Users\Matteo\AppData\Roaming\npm\node_modules\strongloop
+144 verbose fstream_path C:\Users\Matteo\AppData\Roaming\npm\node_modules\strongloop\lib\version.js
+145 verbose fstream_type File
+146 verbose fstream_class FileWriter
+147 verbose stack Error: ENOENT: no such file or directory, lstat 'C:\Users\Matteo\AppData\Roaming\npm\node_modules\strongloop\lib\version.js'
+147 verbose stack     at Error (native)
+148 verbose fstream_stack C:\Program Files\nodejs\node_modules\npm\node_modules\fstream\lib\writer.js:285:28
+148 verbose fstream_stack FSReqWrap.oncomplete (fs.js:82:15)
+149 verbose cwd C:\Users\Matteo\AngularWorkshop
+150 error Windows_NT 10.0.10586
+151 error argv "C:\\Program Files\\nodejs\\node.exe" "C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js" "install" "-g" "strongloop"
+152 error node v4.4.5
+153 error npm  v2.15.5
+154 error path C:\Users\Matteo\AppData\Roaming\npm\node_modules\strongloop\lib\version.js
+155 error code ENOENT
+156 error errno -4058
+157 error syscall lstat
+158 error enoent ENOENT: no such file or directory, lstat 'C:\Users\Matteo\AppData\Roaming\npm\node_modules\strongloop\lib\version.js'
+158 error enoent This is most likely not a problem with npm itself
+158 error enoent and is related to npm not being able to find a file.
+159 verbose exit [ -4058, true ]
+160 verbose unbuild node_modules\strongloop
+161 silly gentlyRm C:\Users\Matteo\AppData\Roaming\npm\node_modules\strongloop is being purged from base C:\Users\Matteo\AppData\Roaming\npm
+162 verbose gentlyRm don't care about contents; nuking C:\Users\Matteo\AppData\Roaming\npm\node_modules\strongloop
+163 silly vacuum-fs purging C:\Users\Matteo\AppData\Roaming\npm\node_modules\strongloop
+164 silly vacuum-fs quitting because other entries in C:\Users\Matteo\AppData\Roaming\npm\node_modules

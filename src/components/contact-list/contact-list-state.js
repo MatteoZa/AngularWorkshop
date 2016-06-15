@@ -1,26 +1,20 @@
 import template from './contact-list.html';
 
-function contactsRoute($stateProvider, authenticatedOnly) {
+function contactListRoute($stateProvider) {
     return $stateProvider
         .state('app.contactList', {
-            url: 'contact-list',
-            restrict: authenticatedOnly,
+            url: 'contactList',
             views: {
                 main: {
                     template: template,
-                    controller: 'ContactListController as contactListController',
-                    resolve: {
-                        contacts: ['contactsService', function(contactsService) {
-                            return contactsService.fetchContacts();
-                        }]
-                    }
+                    controller: 'ContactListController as ContactListController'
                 }
             }
         });
 }
 
+
 export default [
     '$stateProvider',
-    'authenticatedOnly',
-    contactsRoute
+    contactListRoute
 ];
